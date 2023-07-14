@@ -14,8 +14,8 @@ function isoToEmoji(code) {
 /**
  * Affiche le drapeau
  * @param {*} code Code du pays
+ * @param {*} emplacement id de l'élément pour afficher le résultat
  */
-function displayFlag(code) {
-  const elem = document.getElementById("flag");
-  elem.textContent = isoToEmoji(code);
+function displayFlag(code, emplacement) {
+  document.getElementById(emplacement).textContent = isoToEmoji(code);
 }
