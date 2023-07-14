@@ -1,8 +1,7 @@
 /**
- *
- * Source : https://www.youtube.com/watch?v=kiWnG4WowDk
- * @param {*} code
- * @returns
+ * Convertie le texte en emoji
+ * @param {*} code Code du pays
+ * @returns Emoji
  */
 function isoToEmoji(code) {
   return code
@@ -13,10 +12,10 @@ function isoToEmoji(code) {
 }
 
 /**
- *
- * @param {*} code
+ * Affiche le drapeau
+ * @param {*} code Code du pays
  */
 function displayFlag(code) {
-  const elem = document.getElementById("drapeau");
+  const elem = document.getElementById("flag");
   elem.textContent = isoToEmoji(code);
 }
